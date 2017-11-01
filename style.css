@@ -1,0 +1,33 @@
+body{
+background-image: url("foto/background.jpg");
+}
+p{
+  color: white;
+}
+a{
+  background-color:blue;
+  color: white;
+  padding: 19px 19px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+h1{
+  color: white;
+}
+#fotograaf{
+  height: 100px;
+  width: 120px;
+}
+#tekening{
+  height: 140px;
+  width: 100px;
+}
+#dansen{
+  width: 160px;
+  height: 140px;
+}
+#appeltaart{
+  height: 100px;
+  width: 100px;
+}
