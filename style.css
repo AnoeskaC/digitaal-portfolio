@@ -1,33 +1,69 @@
 body{
 background-image: url("foto/background.jpg");
+position: relative;
 }
+
 p{
-  color: white;
+  position: relative;
+  color: DodgerBlue;
 }
-a{
-  background-color:blue;
-  color: white;
-  padding: 19px 19px;
+
+nav a{
+  position: relative;
+  color: DodgerBlue;
+  padding: 6px 6px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
 }
-h1{
-  color: white;
+
+h2{
+  position: relative;
+  color: DodgerBlue;
 }
+
+div{
+  position: relative;
+  background-image: url("foto/background1.jpg");
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  height: 740px;
+  width: 500px;
+}
+
+#mij{
+  position: relative;
+  height: 250px;
+  width: 250px;
+}
+
 #fotograaf{
+  position: relative;
   height: 100px;
   width: 120px;
 }
+
 #tekening{
+  position: relative;
   height: 140px;
-  width: 100px;
-}
-#dansen{
   width: 160px;
-  height: 140px;
 }
-#appeltaart{
-  height: 100px;
-  width: 100px;
+
+#dansen{
+  position: relative;
+  width: 150px;
+  height: 140px
+}
+
+#taarten{
+  position: relative;
+  height: 150px;
+  width: 110px;
+}
+
+footer{
+  position: relative;
+  margin-top: 10px;
+  margin-right: 10px;
 }
