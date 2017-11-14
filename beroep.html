@@ -7,24 +7,39 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <div>
-      <nav>
-        <a class="active" href="portfolio.html">Home</a>
-        <a href="opleiding.html">Opleiding</a>
-        <a href="overmij.html">Over Mij</a>
-        <a href="beroep.">Beroep</a>
-        <a href="wiebenik.html">Wie ben ik</a>
-      </nav>
-      <h2>Wat ik later wil gaan doen na deze opleiding en wat ik wil berijken.</h2>
-        <p>Ik word nu opgeleid in Applicatie ontwikkellaar.</p>
-        <p>Dit wil ik later ook gaan doen.</p>
-        <p>Ik volg nu ook nederlands, engels en rekenen.</p>
-        <p>Aan het einde van deze opleiding kan ik die vakken op 3f niveau.</p>
-      <footer>
-        <a href="https://www.facebook.com/anoeska.clement"><img src="foto/facebook.png" style="height: 50px; width:50px;"></a>
-        <a href="https://www.instagram.com/a.d.clement/?hl=nl"><img src="foto/instagram.jpg" style="height: 50px; width:50px;"></a>
-        <a href="https://github.com/AnoeskaC"><img src="foto/github.png" style="height: 50px; width: 50px;"></a>
-      </footer>
-    </div>
+    <div id="block">
+      <div class="dropdown">
+        <button onclick="menuTrigger()" class="dropbtn">Menu</button>
+          <ul id="dropdown-content" style="display: none;">
+            <li><a class="active" href="portfolio.html">Home</a></li>
+            <li><a href="opleiding.html">Opleiding</a></li>
+            <li><a href="overmij.html">Over Mij</a></li>
+            <li><a href="beroep.">Beroep</a></li>
+            <li><a href="wiebenik.html">Wie ben ik</a></li>
+          </ul>
+      </div>
+    <h2>Wat ik later wil gaan doen na deze opleiding en wat ik wil berijken.</h2>
+      <p>Ik word nu opgeleid in Applicatie ontwikkellaar.</p>
+      <p>Dit wil ik later ook gaan doen.</p>
+      <p>Ik volg nu ook nederlands, engels en rekenen.</p>
+      <p>Aan het einde van deze opleiding kan ik die vakken op 3f niveau.</p>
+    <footer>
+      <a href="https://www.facebook.com/anoeska.clement"><img src="foto/facebook.png" style="height: 50px; width:50px;"></a>
+      <a href="https://www.instagram.com/a.d.clement/?hl=nl"><img src="foto/instagram.jpg" style="height: 50px; width:50px;"></a>
+      <a href="https://github.com/AnoeskaC"><img src="foto/github.png" style="height: 50px; width: 50px;"></a>
+    </footer>
+  </div>
+  <script>
+    var menuIsOpen = false;
+    function menuTrigger() {
+      if(menuIsOpen) {
+        document.getElementById('dropdown-content').style.display = "none";
+        menuIsOpen = false;
+      } else {
+        document.getElementById('dropdown-content').style.display = "block";
+        menuIsOpen = true;
+      }
+    }
+  </script>
   </body>
 </html>

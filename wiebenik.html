@@ -7,14 +7,17 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <div>
-      <nav>
-        <a class="active" href="portfolio.html">Home</a>
-        <a href="opleiding.html">Opleiding</a>
-        <a href="overmij.html">Over Mij</a>
-        <a href="beroep.html">Beroep</a>
-        <a href="wiebenik.">Wie ben ik</a>
-      </nav>
+    <div id="block">
+      <div class="dropdown">
+        <button onclick="menuTrigger()" class="drop-button">Menu</button>
+          <ul id="dropdown-content" style="display: none;">
+            <li><a class="active" href="portfolio.html">Home</a></li>
+            <li><a href="opleiding.html">Opleiding</a></li>
+            <li><a href="overmij.html">Over Mij</a></li>
+            <li><a href="beroep.html">Beroep</a></li>
+            <li><a href="wiebenik.">Wie ben ik</a></li>
+          </ul>
+        </div>
       <h2>Mijn hobby's</h2>
         <p>Ik heb meerdere hobby's.</p>
         <p>Tekenen doe ik graag, maar dansen vind ik ook leuk om te doen.</p>
@@ -28,5 +31,17 @@
         <a href="https://github.com/AnoeskaC"><img src="foto/github.png" style="height: 50px; width: 50px;"></a>
       </footer>
     </div>
+    <script>
+    var menuIsOpen = false;
+    function menuTrigger() {
+      if(menuIsOpen) {
+        document.getElementById('dropdown-content').style.display = "none";
+        menuIsOpen = false;
+      } else {
+        document.getElementById('dropdown-content').style.display = "block";
+        menuIsOpen = true;
+      }
+    }
+    </script>
   </body>
 </html>

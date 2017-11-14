@@ -7,25 +7,41 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <div>
-      <nav>
-        <a class="active" href="#home">Home</a>
-        <a href="opleiding.html">Opleiding</a>
-        <a href="overmij.html">Over Mij</a>
-        <a href="beroep.html">Beroep</a>
-        <a href="wiebenik.html">Wie ben ik</a>
-      </nav>
+    <div id="block">
+      <div class="dropdown">
+        <button onclick="menuTrigger()" class="dropbtn">Menu</button>
+          <ul id="dropdown-content" style="display: none;">
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="opleiding.html">Opleiding</a></li>
+            <li><a href="overmij.html">Over Mij</a></li>
+            <li><a href="beroep.html">Beroep</a></li>
+            <li><a href="wiebenik.html">Wie ben ik</a></li>
+          </ul>
+        </div>
+    <article>
       <h2>Hoi mijn naam is Anoeska Clement</h2>
       <img src="foto/foto1.jpg" id="mij">
       <p>Ik ben sociaal.</p>
       <p>Kan goed samen werken met anderen.</p>
       <p>In een groep kan ik ook goed samenwerken.</p>
-      <p></p>
-      <footer>
-        <a href="https://www.facebook.com/anoeska.clement"><img src="foto/facebook.png" style="height: 50px; width:50px;"></a>
-        <a href="https://www.instagram.com/a.d.clement/?hl=nl"><img src="foto/instagram.jpg" style="height: 50px; width:50px;"></a>
-        <a href="https://github.com/AnoeskaC"><img src="foto/github.png" style="height: 50px; width: 50px;"></a>
-      </footer>
-    </div>
+    </article>
+    <footer>
+      <a href="https://www.facebook.com/anoeska.clement"><img src="foto/facebook.png" style="height: 50px; width:50px;"></a>
+      <a href="https://www.instagram.com/a.d.clement/?hl=nl"><img src="foto/instagram.jpg" style="height: 50px; width:50px;"></a>
+      <a href="https://github.com/AnoeskaC"><img src="foto/github.png" style="height: 50px; width: 50px;"></a>
+    </footer>
+  </div>
+  <script>
+    var menuIsOpen = false;
+    function menuTrigger() {
+      if(menuIsOpen) {
+        document.getElementById('dropdown-content').style.display = "none";
+        menuIsOpen = false;
+      } else {
+        document.getElementById('dropdown-content').style.display = "block";
+        menuIsOpen = true;
+      }
+    }
+  </script>
   </body>
 </html>

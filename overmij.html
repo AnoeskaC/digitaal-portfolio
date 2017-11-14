@@ -7,14 +7,18 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <div>
-      <nav>
-        <a class="active" href="portfolio.html">Home</a>
-        <a href="opleiding.html">Opleiding</a>
-        <a href="overmij">Over Mij</a>
-        <a href="beroep.html">Beroep</a>
-        <a href="wiebenik.html">Wie ben ik</a>
-      </nav>
+    <div id="block">
+      <div class="dropdown">
+        <button onclick="menuTrigger()" class="dropbtn">Menu</button>
+        <ul id="dropdown-content" style="display: none;">
+          <li><a class="active" href="portfolio.html">Home</a></li>
+          <li><a href="opleiding.html">Opleiding</a></li>
+          <li><a href="overmij">Over Mij</a></li>
+          <li><a href="beroep.html">Beroep</a></li>
+          <li><a href="wiebenik.html">Wie ben ik</a></li>
+        </ul>
+      </div>
+    <article>
       <h2>Mijn CV</h2>
       <img src="foto/foto1.jpg" alt="slefie" style="width:170px;height:164px;">
         <p>Naam: Anoeska Clement</p>
@@ -26,14 +30,27 @@
         <p>Telefoon: 0628251205</p>
         <p>Basisschool: O.B.S. De Boomgaard</p>
         <p>Middelbare school: Actief College</p>
-        <p>Beroepsonderwijs: Da vinci</p>
+        <p>Beroepsonderwijs: Da vinci College</p>
         <p>Opleiding: Applicatie ontwikkellaar</p>
         <p>Werkervaring: een half jaar als vakkenvuller bij de Action.</p>
-      <footer>
-        <a href="https://www.facebook.com/anoeska.clement"><img src="foto/facebook.png" style="height: 50px; width:50px;"></a>
-        <a href="https://www.instagram.com/a.d.clement/?hl=nl"><img src="foto/instagram.jpg" style="height: 50px; width:50px;"></a>
-        <a href="https://github.com/AnoeskaC"><img src="foto/github.png" style="height: 50px; width: 50px;"></a>
-      </footer>
-    </div>
+    </article>
+    <footer>
+      <a href="https://www.facebook.com/anoeska.clement"><img src="foto/facebook.png" style="height: 50px; width:50px;"></a>
+      <a href="https://www.instagram.com/a.d.clement/?hl=nl"><img src="foto/instagram.jpg" style="height: 50px; width:50px;"></a>
+      <a href="https://github.com/AnoeskaC"><img src="foto/github.png" style="height: 50px; width: 50px;"></a>
+    </footer>
+  </div>
+  <script>
+    var menuIsOpen = false;
+    function menuTrigger() {
+      if(menuIsOpen) {
+        document.getElementById('dropdown-content').style.display = "none";
+        menuIsOpen = false;
+      } else {
+        document.getElementById('dropdown-content').style.display = "block";
+        menuIsOpen = true;
+      }
+    }
+  </script>
   </body>
 </html>

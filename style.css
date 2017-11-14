@@ -8,11 +8,12 @@ p{
   color: DodgerBlue;
 }
 
-nav a{
+li a{
   position: relative;
   color: DodgerBlue;
-  padding: 6px 6px;
-  text-align: center;
+  padding: 2px 2px;
+  margin: 1px;
+  text-align: left;
   text-decoration: none;
   display: inline-block;
 }
@@ -22,13 +23,13 @@ h2{
   color: DodgerBlue;
 }
 
-div{
+#block{
   position: relative;
   background-image: url("foto/background1.jpg");
   text-align: center;
   text-decoration: none;
   display: block;
-  height: 740px;
+  height: 880px;
   width: 500px;
 }
 
@@ -40,7 +41,7 @@ div{
 
 #fotograaf{
   position: relative;
-  height: 100px;
+  height: 120px;
   width: 120px;
 }
 
@@ -66,4 +67,21 @@ footer{
   position: relative;
   margin-top: 10px;
   margin-right: 10px;
+}
+.dropdown {
+  text-align: left;
+}
+
+.drop-button {
+}
+
+#dropdown-content {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 5;
+  display: block;
+  border: 1px solid black;
+  margin-right: 410px;
+  background-color: white;
 }
